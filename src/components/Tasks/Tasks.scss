@@ -1,0 +1,108 @@
+.todo {
+  &_tasks {
+    padding: 50px;
+    width: 100%;
+
+    &_title {
+      padding-bottom: 10px;
+      width: 100%;
+      display: block;
+
+    }
+  }
+
+  .tasks-headline {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #777;
+
+    img {
+      cursor: pointer;
+      opacity: .3;
+
+      &:hover {
+        opacity: .8;
+      }
+    }
+  }
+
+  .checkbox {
+    input {
+      display: none;
+    }
+
+    label {
+      border: 2px solid #e8e8e8;
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
+      display: block;
+      cursor: pointer;
+      text-align: center;
+    }
+  }
+
+  .tasks__items {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    &-text {
+      flex: 1;
+      padding-left: 15px;
+      border: none;
+    }
+    &:hover {
+      label {
+        background-color: #e8e8e8;
+        border-color: #e8e8e8;
+      }
+    }
+    input:checked + label {
+      background-color: #4DD599;
+      border-color: #4DD599;
+    }
+  }
+}
+
+.tasks_form {
+  margin-top: 25px;
+}
+.tasks_form-new {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  img {
+    margin: 0 22px 0 8px;
+  }
+}
+.button-wrapper {
+  display: flex;
+  flex-direction: row;
+
+  .button-accept {
+    margin: 25px 10px 0 0;
+  }
+
+  .button-accept-grey {
+    background: #c2c2c2;
+    margin: 25px 0 0;
+    &:hover {
+      background: #777;
+    }
+  }
+}
+
+.new-task {
+  width: 100%;
+  background: #fff;
+  border: 1px solid #efefef;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 8px 10px;
+  margin-top: 25px;
+}
